@@ -1,7 +1,7 @@
 FROM node:21.1-alpine3.18
 
 # Set working directory
-WORKDIR /usr/src/buy-me-pares/web
+WORKDIR /usr/src/ppares/web
 
 # Copy package files only (to leverage Docker's layer caching)
 COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* ./

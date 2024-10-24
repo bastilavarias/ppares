@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { SoupIcon } from 'lucide-react';
+import { DiscordLogoIcon } from '@radix-ui/react-icons';
 
 export default function HomeHero() {
     return (
@@ -26,12 +26,17 @@ export default function HomeHero() {
                             <h1 className="text-3xl font-bold">
                                 Sebastian Curtis Lavarias
                             </h1>
-                            <p className="text-gray-600">One step at a time</p>
+                            <p className="text-gray-600">
+                                "One step at a time"
+                            </p>
                         </div>
                     </div>
                     <div className="flex space-x-2">
                         <Button className="w-36 h-12 px-32 rounded-full t text-white">
-                            <SoupIcon /> Bigyan ng Pares
+                            <DiscordLogoIcon
+                                style={{ width: '30px', height: '30px' }}
+                            />
+                            Sali ka sa Discord
                         </Button>
                     </div>
                 </div>
