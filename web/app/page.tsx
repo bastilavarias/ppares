@@ -11,6 +11,8 @@ import {
     SoupIcon,
 } from 'lucide-react';
 import HomeHero from '@/components/home-hero';
+import { Badge } from '@/components/ui/badge';
+import HomeAboutCard from '@/components/home-about-card';
 
 export default function Home() {
     return (
@@ -24,53 +26,7 @@ export default function Home() {
                     </TabsList>
                     <TabsContent value="about" className="mt-4">
                         <div className="grid md:grid-cols-2 gap-8">
-                            <div className="bg-gray-50 p-6 rounded-lg">
-                                <h2 className="text-xl font-semibold mb-4">
-                                    About
-                                </h2>
-                                <p className="text-gray-600 mb-4">
-                                    Hello! Laurence and Lindsay here. We are a
-                                    two-person, award-winning audio fiction
-                                    production company. We're the creators of
-                                    The Ballad of Anne & Mary, Mockery Manor,
-                                    Madame Magenta and Magenta Presents.
-                                    Subscribe wherever you get podcasts, and
-                                    keep an eye on our website and socials for
-                                    news of upcoming projects!
-                                </p>
-                                <a
-                                    href="#"
-                                    className="text-blue-500 hover:underline"
-                                >
-                                    longcatmedia.com
-                                </a>
-                                <div className="flex space-x-4 mt-4">
-                                    <InstagramIcon className="text-gray-600 hover:text-gray-900" />
-                                    <FacebookIcon className="text-gray-600 hover:text-gray-900" />
-                                    <TwitterIcon className="text-gray-600 hover:text-gray-900" />
-                                    <YoutubeIcon className="text-gray-600 hover:text-gray-900" />
-                                </div>
-                                <div className="flex flex-wrap gap-2 mt-4">
-                                    <span className="bg-gray-200 px-2 py-1 rounded text-sm">
-                                        Music
-                                    </span>
-                                    <span className="bg-gray-200 px-2 py-1 rounded text-sm">
-                                        Writing
-                                    </span>
-                                    <span className="bg-gray-200 px-2 py-1 rounded text-sm">
-                                        Video and Film
-                                    </span>
-                                    <span className="bg-gray-200 px-2 py-1 rounded text-sm">
-                                        Art
-                                    </span>
-                                    <span className="bg-gray-200 px-2 py-1 rounded text-sm">
-                                        Podcast
-                                    </span>
-                                    <span className="bg-gray-200 px-2 py-1 rounded text-sm">
-                                        Streaming
-                                    </span>
-                                </div>
-                            </div>
+                            <HomeAboutCard />
                             <div className="bg-gray-50 p-6 rounded-lg">
                                 <h2 className="text-xl font-semibold mb-4">
                                     Buy a Coffee for Long Cat Media
