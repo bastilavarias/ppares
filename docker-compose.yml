@@ -1,0 +1,14 @@
+services:
+  web:
+    container_name: web
+    build:
+      context: ./web
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./web:/usr/src/buy-me-pares/web
+      - /usr/src/buy-me-pares/web/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    restart: always
+    ports:
+      - 3000:3000
