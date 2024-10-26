@@ -4,7 +4,7 @@ import { DiscordLogoIcon } from '@radix-ui/react-icons';
 
 export default function HomeHero() {
     return (
-        <div className="bg-white">
+        <div className="bg-white dark:bg-inherit">
             <div className="container px-12 mx-auto">
                 <div className="relative h-64 md:h-96 overflow-hidden rounded-b-lg">
                     <Image

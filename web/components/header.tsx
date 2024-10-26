@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import { Switch } from '@/components/ui/switch';
 import { useTheme } from 'next-themes';
-import { cn } from '@/lib/utils';
 
 export default function Header() {
     const [darkMode, setDarkMode] = useState(false);
@@ -36,7 +35,7 @@ export default function Header() {
     }, []);
 
     return (
-        <header className="bg-white py-4">
+        <header className="py-8 bg-white dark:bg-inherit">
             <nav className="container mx-auto ">
                 <div className="flex items-center justify-between">
                     <h1 className="text-2xl font-black text-primary">PPARES</h1>
