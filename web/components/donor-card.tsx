@@ -7,7 +7,7 @@ import {
 
 export default function DonorCard() {
     return (
-        <Card className="bg-white p-0 border-0 shadow-none">
+        <Card className="bg-white dark:bg-primary-foreground p-0 border-0 shadow-none">
             <CardHeader className="py-1 pl-0 pr-1 mt-0">
                 <CardTitle className="text-sm font-bold">🍲 Chy</CardTitle>
                 <CardDescription className="flex flex-col space-y-2">
@@ -16,7 +16,7 @@ export default function DonorCard() {
                             Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit. Tempore, voluptatum...
                         </span>
-                        <span className="text-lg font-semibold text-black">
+                        <span className="text-lg font-semibold text-primary">
                             ₱60.00
                         </span>
                     </span>

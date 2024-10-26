@@ -11,9 +11,11 @@ import { Textarea } from '@/components/ui/textarea';
 
 export default function HomeDonateCard() {
     return (
-        <Card className="border-0 bg-white rounded-lg">
+        <Card className="border-0 rounded-lg bg-white dark:bg-primary-foreground">
             <CardHeader>
-                <CardTitle className="mb-0">Bilhan moko ng Pares 🍲</CardTitle>
+                <CardTitle className="text-xl font-semibold">
+                    bilhan moko ng pares 🍲
+                </CardTitle>
                 <CardDescription className="mt-0">
                     Pang boost lang ng discord server bossing! 🙏
                 </CardDescription>
@@ -35,6 +37,7 @@ export default function HomeDonateCard() {
                     <Input placeholder="₱60.00" readOnly />
                     <Input placeholder="Your name or nickname" />
                     <Textarea placeholder="Your message (Optional)" />
+                    <Input placeholder="GIF" />
                     <Button className="w-full bg-primary text-white">
                         Donate ₱60.00
                     </Button>
