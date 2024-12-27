@@ -13,14 +13,7 @@ export default function HomeAboutCard() {
             </CardHeader>
             <CardContent>
                 <p className="mb-4 border-0 text-gray-600 dark:text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Atque debitis deleniti dolor id ipsum magni odit
-                    perspiciatis quas recusandae. Accusamus ad consequuntur
-                    dignissimos eius, explicabo fugiat illo inventore iste, iure
-                    magnam perferendis perspiciatis quibusdam quo sapiente totam
-                    veniam vitae voluptatem? Architecto atque corporis debitis
-                    dignissimos eaque est, facilis id laboriosam recusandae sed
-                    sequi suscipit vero voluptate.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores assumenda commodi incidunt possimus voluptates.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-5">
                     {tags.map((tag, index) => (

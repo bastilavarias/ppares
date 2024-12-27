@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, SetStateAction } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
@@ -14,7 +14,7 @@ export default function NavigationTabs() {
         setActiveTab(tabName);
     }, [pathname]);
 
-    const handleTabChange = (value) => {
+    const handleTabChange = (value: SetStateAction<string>) => {
         setActiveTab(value);
         router.push(`/${value === 'about' ? '/' : value}`);
     };
@@ -26,8 +26,8 @@ export default function NavigationTabs() {
             onValueChange={handleTabChange}
         >
             <TabsList>
-                <TabsTrigger value="about">About</TabsTrigger>
-                <TabsTrigger value="shop">Shop 🛒</TabsTrigger>
+                <TabsTrigger value="about">home</TabsTrigger>
+                <TabsTrigger value="hell">what the hell is this? 😈</TabsTrigger>
             </TabsList>
         </Tabs>
     );

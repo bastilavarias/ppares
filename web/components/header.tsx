@@ -32,7 +32,7 @@ export default function Header() {
             setDarkMode(_theme === 'dark');
         }
         setShouldShowThemeSwitch(true);
-    }, []);
+    }, [setTheme]);
 
     return (
         <header className="py-8 bg-white dark:bg-inherit">
@@ -41,15 +41,6 @@ export default function Header() {
                     <h1 className="text-2xl font-black text-primary">PPARES</h1>
                     <div></div>
                     <div className="flex items-center space-x-4">
-                        {/*<Button size="icon" variant="ghost">*/}
-                        {/*    <User className="h-5 w-5" />*/}
-                        {/*</Button>*/}
-                        {/*<Button size="icon" variant="ghost">*/}
-                        {/*    <Heart className="h-5 w-5" />*/}
-                        {/*</Button>*/}
-                        {/*<Button size="icon" variant="ghost">*/}
-                        {/*    <ShoppingCart className="h-5 w-5" />*/}
-                        {/*</Button>*/}
                         {shouldShowThemeSwitch && (
                             <>
                                 <Switch

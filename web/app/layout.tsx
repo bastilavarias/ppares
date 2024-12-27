@@ -3,7 +3,6 @@ import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import Header from '@/components/header';
 import HomeHero from '@/components/home-hero';
-import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import NavigationTabs from '@/components/navigation-tabs';
 
 export const metadata: Metadata = {
