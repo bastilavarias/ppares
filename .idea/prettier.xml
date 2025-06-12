@@ -3,5 +3,8 @@
   <component name="PrettierConfiguration">
     <option name="myConfigurationMode" value="MANUAL" />
     <option name="myRunOnSave" value="true" />
+    <option name="myRunOnReformat" value="true" />
+    <option name="myFilesPattern" value="**/*.{js,ts,jsx,tsx,cjs,cts,mjs,mts,vue,astro,svelte}" />
+    <option name="customIgnorePath" value="C:\laragon\www\personal-projects\ppares\web\.prettierignore" />
   </component>
 </project>

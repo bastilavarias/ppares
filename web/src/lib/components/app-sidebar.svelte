@@ -26,23 +26,13 @@
 		navMain: [
 			{
 				title: 'Dashboard',
-				url: '#',
+				url: '/dashboard',
 				icon: DashboardIcon
 			},
 			{
-				title: 'Learning Center',
-				url: '#',
+				title: 'Courses',
+				url: '/dashboard/course',
 				icon: ListDetailsIcon
-			},
-			{
-				title: 'Projects',
-				url: '#',
-				icon: FolderIcon
-			},
-			{
-				title: 'Team',
-				url: '#',
-				icon: UsersIcon
 			}
 		],
 		navClouds: [
