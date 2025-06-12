@@ -30,14 +30,9 @@
 				icon: DashboardIcon
 			},
 			{
-				title: 'Courses',
+				title: 'Learning Center',
 				url: '#',
 				icon: ListDetailsIcon
-			},
-			{
-				title: 'Analytics',
-				url: '#',
-				icon: ChartBarIcon
 			},
 			{
 				title: 'Projects',
