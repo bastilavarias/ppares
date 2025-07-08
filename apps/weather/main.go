@@ -1,28 +1,11 @@
 package main
 
-import (
-	"context"
-	"fmt"
-	"os"
-	"weather/pkg/pagasa"
-)
+import "weather/internal/database"
 
 func main() {
-	appCtx, appCancel := context.WithCancel(context.Background())
-	defer appCancel()
+	//appCtx, appCancel := context.WithCancel(context.Background())
+	//defer appCancel()
 
-	pagasaScraper, _ := pagasa.NewPagasaScraper(appCtx)
-
-	synopticStations, _ := pagasaScraper.GetSynopticStations(appCtx)
-	fmt.Println("Synoptic Stations")
-	fmt.Println(synopticStations)
-	fmt.Println("-----")
-
-	automatedStations, _ := pagasaScraper.GetAutomatedStations(appCtx)
-	//pagasaScraper.GetAutomatedStations(appCtx)
-	fmt.Println("Automated Stations")
-	fmt.Println(automatedStations)
-	fmt.Println("-----")
-
-	os.Exit(0)
+	database.Init("root.db")
+	defer database.CloseDB()
 }

@@ -1,10 +1,12 @@
 module weather
 
-go 1.23.5
+go 1.24.4
 
 require (
 	github.com/chromedp/chromedp v0.13.7
 	github.com/gocolly/colly/v2 v2.2.0
+	gorm.io/driver/sqlite v1.6.0
+	gorm.io/gorm v1.30.0
 )
 
 require (
@@ -23,7 +25,10 @@ require (
 	github.com/gobwas/ws v1.4.0 // indirect
 	github.com/golang/groupcache v0.0.0-20241129210726-2c02b8208cf8 // indirect
 	github.com/golang/protobuf v1.5.4 // indirect
+	github.com/jinzhu/inflection v1.0.0 // indirect
+	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/kennygrant/sanitize v1.2.4 // indirect
+	github.com/mattn/go-sqlite3 v1.14.22 // indirect
 	github.com/nlnwa/whatwg-url v0.6.1 // indirect
 	github.com/saintfish/chardet v0.0.0-20230101081208-5e3ef4b5456d // indirect
 	github.com/temoto/robotstxt v1.1.2 // indirect
